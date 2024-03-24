@@ -1,0 +1,223 @@
+.background  {
+    position: relative;
+    background-image: url('../../../public/background-image.png');
+    width: 1512px;
+    height: 980px;
+    gap: 0px;
+    opacity: 0px;
+}
+.monkey-pos {
+    position: absolute;
+    background-image: url('../../../public/monkey-image.png');
+    background-size: 550px 550px;
+    background-repeat: no-repeat;
+    width: 646px;
+    height: 630.91px;
+    top: 186px;
+    left: 515px;
+    gap: 0px;
+    border-radius: 48.49px 0px 0px 0px;
+    opacity: 0px;
+}
+.next-button{
+    position: absolute;
+    background-image: url('../../../public/next-button.png');
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100.51px;
+    top: 630px;
+    left: 1078px;
+    gap: 0px;
+    border-radius: 40.17px;
+    border: none;
+    /* border: 2.01px 0px 2.01px 0px; */
+    opacity: 0px;
+}
+.yes-button{
+    position: absolute;
+    background-image: url('../../../public/yes-button.png');
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100.51px;
+    top: 630px;
+    left: 1078px;
+    gap: 0px;
+    border-radius: 40.17px;
+    border: none;
+    /* border: 2.01px 0px 2.01px 0px; */
+    opacity: 0px;
+}
+.message-box {
+    position: absolute;
+    background-image: url('../../../public/message-area.png');
+    /* background-image:url('../../../public/card-bg-white.png') ; */
+    width: 600.97px;
+    height: 240.91px;
+    top: 90px;
+    left: 827px;
+    gap: 0px;
+    border: 0.27px 0px 0px 0px;
+    opacity: 0px;
+    /* border: 0.27px solid #EFF8FA */
+}
+.message-desc {
+    position: absolute;
+    width: 451px;
+    height: 76px;
+    top: 48px;
+    left: 70px;
+    gap: 0px;
+    /* opacity: 0px; */
+    font-family: Nunito;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 56.38px;
+    text-align: left;
+    color: #11AEC6;
+}
+.back-button {
+    position: absolute;
+    background-image: url('../../../public/back-button.png');
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    top: 45px;
+    left: 43px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+.bananas-collected {
+    position: absolute;
+    background-image: url('../../../public/banana-slider.png');
+    background-size: 700px 30px;
+    background-repeat: no-repeat;
+    height: 37.39px;
+    width: 755.26px;
+    top: 34.44px;
+    left: 300px;
+    gap: 0px;
+    border-radius: 0px 0px 11.22px 11.22px;
+    opacity: 0px;
+    /* angle: -90.28 deg; */
+
+}
+.banana-icon {
+    position: absolute;
+    background-image: url('../../../public/banana-icon.png');
+    background-size: 110px ;
+    background-repeat: no-repeat ;
+    width: 134.89px;
+    height: 139.02px;
+    top: 5px;
+    left: 941px;
+    gap: 0px;
+    opacity: 0px;
+    transform: rotate(30px) ;
+
+}
+.instructions {
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    top: 240px;
+    left: 127px;
+}
+.instruction {
+    background-image: url('../../../public/card-bg-white.png');
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 338px;
+
+    border-radius: 69px;
+
+}
+.step {
+    font-family: Nunito;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.56px;
+    text-align: center;
+    color: #11AEC6;
+
+}
+.what-it-has {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.74px;
+    text-align: center;
+    color: #A6C930;
+}
+.select-a-card {
+    position: absolute;
+    background-image: url('../../../public/message-area.png') ;
+    background-size: 240px 100px;
+    background-repeat: no-repeat;
+    width: 245.26px;
+    height: 104.53px;
+    top: 112px;
+    left: 534px;
+    
+}
+.select-a-card p {
+    color: #11AEC6 ;
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 12px;
+    text-align: center;
+
+}
+.cards-selection {
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    top: 190px;
+    left: 127px;
+}
+.pink-card-selection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50% ;
+}
+.pink-card {
+    background-image: url('../../../public/pink-card.png');
+    background-size: 173px 220px ;
+    background-repeat: no-repeat;
+    box-shadow: -7px -5px 17.799999237060547px 0px #EBEBEB;
+    box-shadow: 3px 4px 9.399999618530273px 0px #EBEBEB4F;
+    width: 173.12px;
+    height: 221px;
+
+}
+.blue-card-selection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50% ;
+}
+.blue-card {
+    background-image: url('../../../public/blue-card.png');
+    background-size: 173px 220px ;
+    background-repeat: no-repeat;
+    box-shadow: -7px -5px 17.799999237060547px 0px #EBEBEB;
+    box-shadow: 3px 4px 9.399999618530273px 0px #EBEBEB4F;
+    width: 173.12px;
+    height: 221px;
+}
+.final-reward {
+    position: relative;
+    background-image: url('../../../public/final-reward-screen.png');
+    width: 1512px;
+    height: 980px ;   
+}
