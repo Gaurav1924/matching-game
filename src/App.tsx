@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import IntroScreen1 from './components/IntroScreen/IntroScreen1/IntroScreen1';
 import IntroScreen2 from './components/IntroScreen/IntroScreen2/IntroScreen2';
@@ -14,18 +14,23 @@ function App() {
       <header className="App-header">
         <Router>
           <div>
-            <Switch>
-              <Route exact path="/" component={IntroScreen1} />
+            <Routes>
+              <Route path="/" element={<IntroScreen1 />} />
+              <Route path="/IntroScreen1" element={<IntroScreen1 />} />
+              <Route path="/IntroScreen2" element={<IntroScreen2 />} />
+              <Route path="/IntroScreen3" element={<IntroScreen3 />} />
+              <Route path="/IntructionScreen" element={<IntructionScreen />} />
+              <Route path="/ActivityScreen" element={<ActivityScreen />} />
               {/* <Route path="/about" component={About} /> */}
               {/* Add more routes as needed */}
-            </Switch>
+            </Routes>
           </div>
         </Router>
         {/* <IntroScreen1/> */}
         {/* <IntroScreen2/> */}
         {/* <IntroScreen3 /> */}
         {/* <IntructionScreen /> */}
-        <ActivityScreen />
+        {/* <ActivityScreen /> */}
       </header>
     </div>
   );

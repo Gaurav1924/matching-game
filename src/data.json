@@ -1,0 +1,12 @@
+let leftCards = {
+    matching_index : 1 ,
+	value : "apple",
+	url   : '../../../public/apple.png'
+}
+
+let rightCards = {
+    index : 1 ,
+	value : "A",
+	url   : '../../../public/letter-a.png'
+}
+

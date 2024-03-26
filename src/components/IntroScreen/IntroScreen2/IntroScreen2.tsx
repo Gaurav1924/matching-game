@@ -1,11 +1,11 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const IntroScreen2: React.FC = () => {
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleClick = () => {
-    history.push('/IntroScreen'); // Route to the desired destination
+    history('/IntroScreen3'); // Route to the desired destination
   };
   return (
     <div className='background'>

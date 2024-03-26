@@ -1,10 +1,10 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const IntructionScreen: React.FC = () => {
-    const history = useHistory();
+    const history = useNavigate();
 
     const handleClick = () => {
-        history.push('/ActivityScreeen'); // Route to the desired destination
+        history('/ActivityScreen'); // Route to the desired destination
     };
     return (
         <div className='background'>

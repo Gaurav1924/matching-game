@@ -1,12 +1,66 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ActivityScreen: React.FC = () => {
-    const history = useHistory();
+    const [leftCard, setLeftCard] = useState([
+        {
+            value: "Apple",
+            imageUrl: "",
+        },
+        {
+            value: "Grapes",
+            imageUrl: "",
+        },
+        {
+            value: "Mango",
+            imageUrl: "",
+        },
+        {
+            value: "PineApple",
+            imageUrl: "",
+        }
+    ])
+    const [rightCard, setRightCard] = useState([
+        {
+            value: "M",
+            imageUrl: "",
+        },
+        {
+            value: "P",
+            imageUrl: "",
+        },
+        {
+            value: "A",
+            imageUrl: "",
+        },
+        {
+            value: "G",
+            imageUrl: "",
+        },
+
+    ])
+    const [selectionTurn, setSelectionTurn] = useState(0);// 0 for left & 1 for Right
+    const [leftSelected, setLeftSelected] = useState(-1);// initially no left card is selected hence -1 
+    const history = useNavigate();
 
     const handleClick = () => {
-        history.push('/FinalRewardScreen'); // Route to the desired destination
+        history('/FinalRewardScreen'); // Route to the desired destination
     };
+
+    const hanldeLeftSection = (index: number) => {
+        setLeftSelected(index);
+    }
+
+    const hanldeRightSelected = (index: number) => {
+        let object = rightCard[index];
+        console.log(object.value, leftCard[leftSelected].value[0])
+        if (object.value === leftCard[leftSelected].value[0]) {
+            console.log("Its a match")
+        } else {
+            console.log("Its not a match");
+        }
+    }
+
     return (
         <div className='background'>
             <div className='back-button'>
@@ -21,20 +75,37 @@ const ActivityScreen: React.FC = () => {
             <div className='cards-selection'>
                 <div className='pink-card-selection'>
                     {/* <img src="../../../public/pink-card.png" alt="" width={173} height={220} /> */}
-                    <div className='pink-card'></div>
-                    <div className='pink-card'></div>
-                    <div className='pink-card'></div>
-                    <div className='pink-card'></div>
-                    <div className='pink-card'></div>
-                    <div className='pink-card'></div>
+                    {leftCard.map(({ value }, index) => {
+                        return (
+                            <div className='pink-card' onClick={() => {
+                                if (selectionTurn !== 0) return;
+                                hanldeLeftSection(index)
+                                setSelectionTurn(1);
+                            }}>
+                                {
+                                    leftSelected === index ? "This is selcted index" : value
+                                }
+                            </div>
+
+                        )
+
+                    })}
                 </div>
                 <div className='blue-card-selection'>
-                    <div className='blue-card'></div>
-                    <div className='blue-card'></div>
-                    <div className='blue-card'></div>
-                    <div className='blue-card'></div>
-                    <div className='blue-card'></div>
-                    <div className='blue-card'></div>
+                    {rightCard.map(({ value }, index) => {
+                        return (
+                            <div className='blue-card' onClick={() => {
+                                if (selectionTurn !== 1) return;
+                                hanldeRightSelected(index);
+                                setSelectionTurn(0);
+                            }}>
+                                {value}
+                            </div>
+
+                        )
+
+                    })}
+
                 </div>
             </div>
             <button className='next-button' onClick={handleClick}></button>
