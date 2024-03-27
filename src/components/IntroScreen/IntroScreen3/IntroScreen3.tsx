@@ -7,10 +7,12 @@ const IntroScreen3: React.FC = () => {
     const handleClick = () => {
         history('/IntructionScreen'); // Route to the desired destination
     };
+    const backClick = () => {
+        history('/IntroScreen2');
+    };
     return (
         <div className='background'>
-            <div className='back-button'>
-                <img src="../../../public/back-button.png" alt="" />
+            <div className='back-button' onClick={backClick}>
             </div>
             <div className='bananas-collected'>
             </div>
@@ -21,7 +23,6 @@ const IntroScreen3: React.FC = () => {
                 </div>
             </div>
             <div className='monkey-pos'>
-                <img src="../../public/monkey-image.png" alt="" />
             </div>
             <button className='yes-button' onClick={handleClick}>
                 {/* <img src="../../public/start-button.png" alt="" /> */}

@@ -1,6 +1,6 @@
 .background  {
     position: relative;
-    background-image: url('../../../public/background-image.png');
+    background-image: url('../../assets/background-image.png');
     width: 1512px;
     height: 980px;
     gap: 0px;
@@ -8,7 +8,7 @@
 }
 .monkey-pos {
     position: absolute;
-    background-image: url('../../../public/monkey-image.png');
+    background-image: url('../../assets/monkey-image.png');
     background-size: 550px 550px;
     background-repeat: no-repeat;
     width: 646px;
@@ -21,7 +21,7 @@
 }
 .next-button{
     position: absolute;
-    background-image: url('../../../public/next-button.png');
+    background-image: url('../../assets/next-button.png');
     background-size: 300px 100px;
     background-repeat: no-repeat;
     width: 300px;
@@ -36,7 +36,7 @@
 }
 .yes-button{
     position: absolute;
-    background-image: url('../../../public/yes-button.png');
+    background-image: url('../../assets/yes-button.png');
     background-size: 300px 100px;
     background-repeat: no-repeat;
     width: 300px;
@@ -51,8 +51,8 @@
 }
 .message-box {
     position: absolute;
-    background-image: url('../../../public/message-area.png');
-    /* background-image:url('../../../public/card-bg-white.png') ; */
+    background-image: url('../../assets/message-area.png');
+    /* background-image:url('../../assets/card-bg-white.png') ; */
     width: 600.97px;
     height: 240.91px;
     top: 90px;
@@ -79,7 +79,7 @@
 }
 .back-button {
     position: absolute;
-    background-image: url('../../../public/back-button.png');
+    background-image: url('../../assets/back-button.png');
     background-size: 120px 120px;
     background-repeat: no-repeat;
     width: 120px;
@@ -92,7 +92,7 @@
 }
 .bananas-collected {
     position: absolute;
-    background-image: url('../../../public/banana-slider.png');
+    background-image: url('../../assets/banana-slider.png');
     background-size: 700px 30px;
     background-repeat: no-repeat;
     height: 37.39px;
@@ -107,7 +107,7 @@
 }
 .banana-icon {
     position: absolute;
-    background-image: url('../../../public/banana-icon.png');
+    background-image: url('../../assets/banana-icon.png');
     background-size: 110px ;
     background-repeat: no-repeat ;
     width: 134.89px;
@@ -128,7 +128,7 @@
     left: 127px;
 }
 .instruction {
-    background-image: url('../../../public/card-bg-white.png');
+    background-image: url('../../assets/card-bg-white.png');
     background-repeat: no-repeat;
     /* background-size: ; */
     display: flex ;
@@ -145,7 +145,7 @@
     font-family: Nunito;
     font-size: 40px;
     font-weight: 800;
-    line-height: 54.56px;
+    line-height: 32px;
     text-align: center;
     color: #11AEC6;
 
@@ -160,7 +160,7 @@
 }
 .select-a-card {
     position: absolute;
-    background-image: url('../../../public/message-area.png') ;
+    background-image: url('../../assets/message-area.png') ;
     background-size: 240px 100px;
     background-repeat: no-repeat;
     width: 245.26px;
@@ -192,14 +192,18 @@
     width: 50% ;
 }
 .pink-card {
-    background-image: url('../../../public/pink-card.png');
+    background-image: url('../../assets/pink-card.png');
     background-size: 173px 220px ;
     background-repeat: no-repeat;
     box-shadow: -7px -5px 17.799999237060547px 0px #EBEBEB;
     box-shadow: 3px 4px 9.399999618530273px 0px #EBEBEB4F;
     width: 173.12px;
     height: 221px;
-
+}
+.fruit-image {
+    display: flex;
+    width: 173.12px;
+    height: 221px;
 }
 .blue-card-selection {
     display: flex;
@@ -207,7 +211,7 @@
     width: 50% ;
 }
 .blue-card {
-    background-image: url('../../../public/blue-card.png');
+    background-image: url('../../assets/blue-card.png');
     background-size: 173px 220px ;
     background-repeat: no-repeat;
     box-shadow: -7px -5px 17.799999237060547px 0px #EBEBEB;
@@ -217,7 +221,7 @@
 }
 .final-reward {
     position: relative;
-    background-image: url('../../../public/final-reward-screen.png');
+    background-image: url('../../assets/final-reward-screen.png');
     width: 1512px;
     height: 980px ;   
 }
