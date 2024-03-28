@@ -108,10 +108,7 @@ const ActivityScreen: React.FC = () => {
                                 hanldeLeftSection(index)
                                 setSelectionTurn(1);
                             }}>
-                                {
-                                    leftSelected === index ? `<div className='fruit-image'>
-                                    <img src=""></div>`
-                                }
+
                             </div>
 
                         )
