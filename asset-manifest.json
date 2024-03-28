@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Matching-Game/static/css/main.a970bda4.css",
+    "main.js": "/Matching-Game/static/js/main.43fb0296.js",
+    "static/js/453.0ed7e89e.chunk.js": "/Matching-Game/static/js/453.0ed7e89e.chunk.js",
+    "static/media/final-reward-screen.png": "/Matching-Game/static/media/final-reward-screen.1bb295387b4c628671ce.png",
+    "static/media/background-image.png": "/Matching-Game/static/media/background-image.ff281566e3c80e1ff658.png",
+    "static/media/monkey-image.png": "/Matching-Game/static/media/monkey-image.815d9eb90b66a791ada4.png",
+    "static/media/bothCards.png": "/Matching-Game/static/media/bothCards.fbc32a666eff1b753cdd.png",
+    "static/media/message-area.png": "/Matching-Game/static/media/message-area.8766b8386425cf3058b4.png",
+    "static/media/blue-card.png": "/Matching-Game/static/media/blue-card.9a11508a67bdb4c253e1.png",
+    "static/media/pink-card.png": "/Matching-Game/static/media/pink-card.36fb6c0d3f65db0cce56.png",
+    "static/media/back-button.png": "/Matching-Game/static/media/back-button.9c14eaf944d20db2bf72.png",
+    "static/media/next-button.png": "/Matching-Game/static/media/next-button.72ecca26311983874045.png",
+    "static/media/yes-button.png": "/Matching-Game/static/media/yes-button.91b83d1d524dc74b415d.png",
+    "index.html": "/Matching-Game/index.html",
+    "main.a970bda4.css.map": "/Matching-Game/static/css/main.a970bda4.css.map",
+    "main.43fb0296.js.map": "/Matching-Game/static/js/main.43fb0296.js.map",
+    "453.0ed7e89e.chunk.js.map": "/Matching-Game/static/js/453.0ed7e89e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a970bda4.css",
+    "static/js/main.43fb0296.js"
+  ]
+}
