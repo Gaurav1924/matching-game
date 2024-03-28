@@ -1,41 +1,64 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import matchImage from '../../assets/Its-a-Match.png'
 const ActivityScreen: React.FC = () => {
+    const [leftImage, setLeftImage] = useState("")
+    const [rightImage, setRightImage] = useState("")
+
     const [leftCard, setLeftCard] = useState([
         {
-            value: "Apple",
-            imageUrl: "",
-        },
-        {
+            value: "Avacado",
+            imageUrl: "../../../public/avacado.png",
+        }, {
             value: "Grapes",
-            imageUrl: "",
+            imageUrl: "../../../public/grapes.png",
         },
+
+
         {
             value: "Mango",
-            imageUrl: "",
+            imageUrl: "../../../public/mango.png",
         },
+
         {
             value: "PineApple",
-            imageUrl: "",
+            imageUrl: "../../../public/pineapple.png"
+        },
+        {
+
+            value: "Orange",
+            imageUrl: "../../../public/orange.png"
+        }, {
+            value: "Strawberry",
+            imageUrl: "../../../public/strawberry.png",
         }
-    ])
+    ]
+    )
     const [rightCard, setRightCard] = useState([
         {
             value: "M",
-            imageUrl: "",
+            imageUrl: "../../../public/letter-m.png",
         },
         {
             value: "P",
-            imageUrl: "",
+            imageUrl: "../../../public/letter-p.png",
         },
         {
             value: "A",
-            imageUrl: "",
+            imageUrl: "../../../public/letter-a.png",
         },
         {
             value: "G",
-            imageUrl: "",
+            imageUrl: "../../../public/letter-g.png",
+        },
+        {
+            value: "S",
+            imageUrl: "../../../public/letter-s.png",
+        },
+        {
+            value: "O",
+            imageUrl: "../../../public/letter-o.png",
         },
 
     ])
@@ -55,9 +78,13 @@ const ActivityScreen: React.FC = () => {
         let object = rightCard[index];
         console.log(object.value, leftCard[leftSelected].value[0])
         if (object.value === leftCard[leftSelected].value[0]) {
-            console.log("Its a match")
+            setLeftImage(leftCard[leftSelected].value[0])
+            setRightImage(object.imageUrl)
+            return true;
         } else {
-            console.log("Its not a match");
+            setLeftImage(leftCard[leftSelected].value[0])
+            setRightImage(object.imageUrl)
+            return false;
         }
     }
 
@@ -74,7 +101,6 @@ const ActivityScreen: React.FC = () => {
             </div>
             <div className='cards-selection'>
                 <div className='pink-card-selection'>
-                    {/* <img src="../../../public/pink-card.png" alt="" width={173} height={220} /> */}
                     {leftCard.map(({ value }, index) => {
                         return (
                             <div className='pink-card' onClick={() => {
@@ -82,9 +108,10 @@ const ActivityScreen: React.FC = () => {
                                 hanldeLeftSection(index)
                                 setSelectionTurn(1);
                             }}>
-                                {
-                                    leftSelected === index ? "This is selcted index" : value
-                                }
+                                {/* {
+                                    leftSelected === index ? `<div className='fruit-image'>
+                                    <img src=""></div>`
+                                } */}
                             </div>
 
                         )
@@ -97,6 +124,11 @@ const ActivityScreen: React.FC = () => {
                             <div className='blue-card' onClick={() => {
                                 if (selectionTurn !== 1) return;
                                 hanldeRightSelected(index);
+                                if (hanldeRightSelected(index) === true) {
+                                    (<div>
+                                        <img src={matchImage} alt="" height={100} width={100} />
+                                    </div>)
+                                }
                                 setSelectionTurn(0);
                             }}>
                                 {value}

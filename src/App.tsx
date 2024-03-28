@@ -7,6 +7,7 @@ import IntroScreen3 from './components/IntroScreen/IntroScreen3/IntroScreen3';
 import './components/IntroScreen/IntroScreen.css';
 import IntructionScreen from './components/InstructionScreen/InstructionScreen';
 import ActivityScreen from './components/ActivityScreen/ActivityScreen';
+import FinalRewardScreen from './components/finalRewardScreen/finalRewardScreen';
 
 function App() {
   return (
@@ -21,16 +22,10 @@ function App() {
               <Route path="/IntroScreen3" element={<IntroScreen3 />} />
               <Route path="/IntructionScreen" element={<IntructionScreen />} />
               <Route path="/ActivityScreen" element={<ActivityScreen />} />
-              {/* <Route path="/about" component={About} /> */}
-              {/* Add more routes as needed */}
+              <Route path="/FinalRewardScreen" element={<FinalRewardScreen />} />
             </Routes>
           </div>
         </Router>
-        {/* <IntroScreen1/> */}
-        {/* <IntroScreen2/> */}
-        {/* <IntroScreen3 /> */}
-        {/* <IntructionScreen /> */}
-        {/* <ActivityScreen /> */}
       </header>
     </div>
   );
