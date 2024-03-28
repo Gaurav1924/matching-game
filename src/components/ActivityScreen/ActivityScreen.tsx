@@ -69,7 +69,9 @@ const ActivityScreen: React.FC = () => {
     const handleClick = () => {
         history('/FinalRewardScreen'); // Route to the desired destination
     };
-
+    const backClick = () => {
+        history('/IntroScreen1');
+    };
     const hanldeLeftSection = (index: number) => {
         setLeftSelected(index);
     }
@@ -90,7 +92,7 @@ const ActivityScreen: React.FC = () => {
 
     return (
         <div className='background'>
-            <div className='back-button'>
+            <div className='back-button' onClick={backClick}>
                 <img src="../../../public/back-button.png" alt="" />
             </div>
             <div className='bananas-collected'>
