@@ -23,6 +23,7 @@ function App() {
               <Route path="/IntructionScreen" element={<IntructionScreen />} />
               <Route path="/ActivityScreen" element={<ActivityScreen />} />
               <Route path="/FinalRewardScreen" element={<FinalRewardScreen />} />
+              <Route element={<IntroScreen1 />} />
             </Routes>
           </div>
         </Router>
